@@ -8,11 +8,36 @@
   position: fixed;
   top: 0;
   left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.header-home {
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
 }
 
-.header-logo {
+.header-other {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  height: 15rem;
+}
+
+.header a {
+  display: block;
   height: 80%;
   width: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.header-logo {
+  height: 100%;
+  width: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.header-logo-home {
+  transform: scale(1);
+}
+
+.header-logo-other {
+  transform: scale(1.1);
 }
 
