@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Teams from "./pages/Teams";
+import TeamPage from "./pages/TeamPage";
 
 function App() {
   const [isHome, setIsHome] = useState(true);
@@ -23,7 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/teams" element={<Teams />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/teams/:teamId" element={<TeamPage />} />
         </Routes>
       </Router>
 

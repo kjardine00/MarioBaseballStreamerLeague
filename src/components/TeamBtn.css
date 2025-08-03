@@ -1,0 +1,22 @@
+.team-btn-container {
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.team-btn-container:hover {
+    transform: translateY(-5px);
+}
+
+.team-btn-img {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+.team-btn-img:hover {
+    transform: scale(1.05);
+}
