@@ -3,15 +3,14 @@ import TeamBtn from "../components/TeamBtn";
 import "./Teams.css";
 import { useState, useEffect } from "react";
 import teamsData from "../data/teams.json";
-import { getStadiumImage } from "../assets/assetRegistry";
-
+import StadiumBackground from "../components/StadiumBackground";
 
 function Teams() {
   const [teams, setTeams] = useState([]);
-  const [currentTeam, setCurrentTeam] = useState(null);
+  const [bgStadium, setBGStadium] = useState("Mario Stadium");
 
-  const handleCurrentTeam = (team) => {
-    setCurrentTeam(team);
+  const onMouseEnter = (team) => {
+    setBGStadium(team.stadium);
   }
 
   useEffect(() => {
@@ -20,12 +19,12 @@ function Teams() {
 
   return (
     <>
-    <StadiumBackground stadium={currentTeam?.stadium} />
+    <StadiumBackground stadium={bgStadium} />
     <div className="teams-container">
       {teams.length > 0 ? (
         teams.map((team) => (
           <Link key={team.id} to={`/teams/${team.id}`}>
-            <TeamBtn team={team} />
+            <TeamBtn team={team} onMouseEnter={onMouseEnter} />
           </Link>
         ))
       ) : (
