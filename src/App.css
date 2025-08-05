@@ -1,0 +1,32 @@
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 25vh;
+  box-sizing: border-box;
+}
+
+.footer {
+    background-color: var(--color-blue);
+    color: white;
+    text-align: center; 
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+.footer-home {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-other {
+    position: relative;
+    margin-top: auto; /* Push footer to bottom when content is short */
+}

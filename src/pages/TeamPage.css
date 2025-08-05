@@ -1,0 +1,4 @@
+.team-page {
+    display: flex;
+    flex-direction: row;
+}

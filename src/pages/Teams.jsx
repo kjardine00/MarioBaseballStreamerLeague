@@ -19,18 +19,18 @@ function Teams() {
 
   return (
     <>
-    <StadiumBackground stadium={bgStadium} />
-    <div className="teams-container">
-      {teams.length > 0 ? (
-        teams.map((team) => (
-          <Link key={team.id} to={`/teams/${team.id}`}>
-            <TeamBtn team={team} onMouseEnter={onMouseEnter} />
-          </Link>
-        ))
-      ) : (
-        <h1>Loading...</h1>
-      )}
-    </div>
+      <div className="teams-container">
+        {teams.length > 0 ? (
+          teams.map((team) => (
+            <Link key={team.id} to={`/teams/${team.id}`}>
+              <TeamBtn team={team.id} onMouseEnter={onMouseEnter} />
+            </Link>
+          ))
+        ) : (
+          <h1>Loading...</h1>
+        )}
+      </div>
+      <StadiumBackground stadium={bgStadium} />
     </>
   );
 }

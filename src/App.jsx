@@ -1,40 +1,44 @@
-import { useState } from "react"; 
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router";
 import "./App.css";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import Teams from "./pages/Teams";
 import TeamPage from "./pages/TeamPage";
 
-function App() {
-  const [isHome, setIsHome] = useState(true);
+function AppContent() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
   const [isNavOpen, setIsNavOpen] = useState(false);
-
-  const toggleHome = (x) => {
-    setIsHome(x);
-  };
 
   const toggleNav = (x) => {
     setIsNavOpen(x);
   };
-  
+
   return (
     <>
-      <Router>
-        <Header isHome={isHome} toggleHome={toggleHome} isNavOpen={isNavOpen} toggleNav={toggleNav} />
-        <Nav isOpen={isNavOpen} onClose={() => setIsNavOpen(false)} />
-
+      <Header isHome={isHome} isNavOpen={isNavOpen} toggleNav={toggleNav} />
+      <Nav isOpen={isNavOpen} onClose={() => setIsNavOpen(false)} />
+      <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/teams" element={<Teams />} />
           <Route path="/teams/:teamId" element={<TeamPage />} />
         </Routes>
-      </Router>
-
-      <Footer />
+      </div>
+      <div className={`footer ${isHome ? "footer-home" : "footer-other"}`}>
+        <p>All-Star Superstar Baseball League and Steamer Tournament</p>
+      </div>
     </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 

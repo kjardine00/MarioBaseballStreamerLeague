@@ -1,12 +1,13 @@
 import { useParams } from "react-router";
+import TeamRoster from "../components/TeamRoster";
 
 function TeamPage() {
     const { teamId } = useParams();
     
     return (
-        <div>
+        <div className="team-page">
             <h1>Team Page for: {teamId}</h1>
-            <p>This is the detailed page for the {teamId} team.</p>
+            <TeamRoster teamId={teamId} />
         </div>
     )
 }

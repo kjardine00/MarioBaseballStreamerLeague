@@ -2,13 +2,13 @@ import { Link, useLocation } from "react-router";
 import "./Header.css";
 import hamburgerMenu from "../assets/menu-hamburger.svg";
 
-function Header({ isHome, toggleHome, isNavOpen, toggleNav }) {
+function Header({ isHome, isNavOpen, toggleNav }) {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
   return (
     <div className={`header ${isHomePage ? "header-home" : "header-other"}`}>
-      <Link to="/" onClick={() => toggleHome(true)}>
+      <Link to="/">
         <img
           className={`header-logo ${
             isHomePage ? "header-logo-home" : "header-logo-other"

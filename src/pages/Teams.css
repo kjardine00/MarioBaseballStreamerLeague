@@ -1,15 +1,8 @@
-.teams-container {
-  /* Account for fixed header height (15rem for non-home pages) */
-  margin-top: 15rem;
-  
-  /* Add some padding for breathing room */
-  padding: 6rem;
-  
-  
+.teams-container {  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-}
+} 
