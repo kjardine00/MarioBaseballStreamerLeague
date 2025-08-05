@@ -10,16 +10,21 @@ import TeamPage from "./pages/TeamPage";
 
 function App() {
   const [isHome, setIsHome] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleHome = (x) => {
     setIsHome(x);
+  };
+
+  const toggleNav = (x) => {
+    setIsNavOpen(x);
   };
   
   return (
     <>
       <Router>
-        <Header isHome={isHome} toggleHome={toggleHome} />
-        <Nav />
+        <Header isHome={isHome} toggleHome={toggleHome} isNavOpen={isNavOpen} toggleNav={toggleNav} />
+        <Nav isOpen={isNavOpen} onClose={() => setIsNavOpen(false)} />
 
         <Routes>
           <Route path="/" element={<Home />} />

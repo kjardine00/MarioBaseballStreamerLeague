@@ -3,19 +3,58 @@
   top: 0;
   right: 0;
   height: 100vh;
-  width: 15rem;
+  width: 25vw;
   background-color: var(--color-green);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 1rem;
+  font-size: 4rem;
+  z-index: 2000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-closed {
+  transform: translateX(100%);
+}
+
+.nav-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.nav-close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid white;
+  width: 100%;
 }
 
 .nav-links {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
-  padding: 0 1rem;
 }
 
 .nav-link {
@@ -23,35 +62,12 @@
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1.25rem;
+  justify-content: flex-start;;
+  padding-left: 2rem;
+  font-weight: 600;
 }
 
-.nav-link img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: all 0.3s ease;
-}
-
-@keyframes radialShake {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(2deg);
-  }
-  50% {
-    transform: rotate(-1deg);
-  }
-  75% {
-    transform: rotate(1.5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.nav-link:hover img {
-  animation: radialShake 0.75s ease-in-out;
+.nav-link:hover {
+  background-color: white;
+  color: var(--color-green);
 }
