@@ -1,0 +1,402 @@
+{
+  "schedule": [
+    {
+      "id": 0,
+      "week": "1",
+      "dateRange": "7/21 - 7/27",
+      "matchups": [
+        {
+          "awayPlayer": "GPB",
+          "homePlayer": "CJ",
+          "gameTime": "Thursday, 5ET",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "GPB",
+              "awayScore": 13,
+              "homePlayer": "CJ",
+              "homeScore": 3,
+              "stadium": "Bowser Castle"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "CJ",
+              "awayScore": 4,
+              "homePlayer": "GPB",
+              "homeScore": 14,
+              "stadium": "Wario Palace"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "CJ",
+              "awayScore": 0,
+              "homePlayer": "GPB",
+              "homeScore": 6,
+              "stadium": "Bowser Castle"
+            }
+          ],
+          "overallStatus": "Not Submitted"
+        },
+        {
+          "awayPlayer": "DGR Dave",
+          "homePlayer": "Fir",
+          "gameTime": "Wednesday, 1ET",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "DGR Dave",
+              "awayScore": 10,
+              "homePlayer": "Fir",
+              "homeScore": 0,
+              "stadium": "Peach Garden"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "Fir",
+              "awayScore": 0,
+              "homePlayer": "DGR Dave",
+              "homeScore": 7,
+              "stadium": "Yoshi Park"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "DGR Dave",
+              "awayScore": 7,
+              "homePlayer": "Fir",
+              "homeScore": 1,
+              "stadium": "Bowser Castle"
+            }
+          ],
+          "overallStatus": "Submitted"
+        },
+        {
+          "awayPlayer": "Andy",
+          "homePlayer": "Lightorias",
+          "gameTime": "Sunday, 8ET",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "Lightorias",
+              "awayScore": 3,
+              "homePlayer": "Andy",
+              "homeScore": 13,
+              "stadium": "DK Jungle"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "Andy",
+              "awayScore": 8,
+              "homePlayer": "Lightorias",
+              "homeScore": 3,
+              "stadium": "Yoshi Park"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "Lightorias",
+              "awayScore": 4,
+              "homePlayer": "Andy",
+              "homeScore": 2,
+              "stadium": "Bowser Castle"
+            }
+          ],
+          "overallStatus": "Processed"
+        },
+        {
+          "awayPlayer": "Phillie",
+          "homePlayer": "star0chris",
+          "gameTime": "Wednesday, 6ET",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "Phillie",
+              "awayScore": 10,
+              "homePlayer": "star0chris",
+              "homeScore": 1,
+              "stadium": "Wario Palace"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "star0chris",
+              "awayScore": 4,
+              "homePlayer": "Phillie",
+              "homeScore": 5,
+              "stadium": "DK Jungle"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "Phillie",
+              "awayScore": 7,
+              "homePlayer": "star0chris",
+              "homeScore": 9,
+              "stadium": "Bowser Castle"
+            }
+          ],
+          "overallStatus": "Problem"
+        },
+        {
+          "awayPlayer": "Moarf",
+          "homePlayer": "Xwater",
+          "gameTime": "Wednesday, 3 PM",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "Xwater",
+              "awayScore": 0,
+              "homePlayer": "Moarf",
+              "homeScore": 2,
+              "stadium": "Mario Stadium"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "Moarf",
+              "awayScore": 3,
+              "homePlayer": "Xwater",
+              "homeScore": 10,
+              "stadium": "Mario Stadium"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "Xwater",
+              "awayScore": 2,
+              "homePlayer": "Moarf",
+              "homeScore": 6,
+              "stadium": "Bowser Castle"
+            }
+          ],
+          "overallStatus": "Processed"
+        },
+        {
+          "awayPlayer": "Wavy",
+          "homePlayer": "Vswed",
+          "gameTime": "Friday, 5ET",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "Wavy",
+              "awayScore": 0,
+              "homePlayer": "Vswed",
+              "homeScore": 10,
+              "stadium": "Bowser Castle"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "Vswed",
+              "awayScore": 13,
+              "homePlayer": "Wavy",
+              "homeScore": 3,
+              "stadium": "Peach Garden"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "Vswed",
+              "awayScore": 14,
+              "homePlayer": "Wavy",
+              "homeScore": 4,
+              "stadium": "Bowser Castle"
+            }
+          ],
+          "overallStatus": "Processed"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "week": "3-Week Interleague",
+      "dateRange": "7/21 - 8/10",
+      "matchups": [
+        {
+          "awayPlayer": "GPB",
+          "homePlayer": "Phillie",
+          "gameTime": "August 2nd, 7ET",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "Phillie",
+              "awayScore": 7,
+              "homePlayer": "GPB",
+              "homeScore": 4,
+              "stadium": "Wario Palace"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "GPB",
+              "awayScore": 2,
+              "homePlayer": "Phillie",
+              "homeScore": 4,
+              "stadium": "DK Jungle"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "GPB",
+              "awayScore": 4,
+              "homePlayer": "Phillie",
+              "homeScore": 1,
+              "stadium": "Wario Palace"
+            }
+          ],
+          "overallStatus": "Processed"
+        },
+        {
+          "awayPlayer": "CJ",
+          "homePlayer": "star0chris",
+          "gameTime": "July 30th, 5ET",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "CJ",
+              "awayScore": 7,
+              "homePlayer": "star0chris",
+              "homeScore": 12,
+              "stadium": "Wario Palace"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "star0chris",
+              "awayScore": 5,
+              "homePlayer": "CJ",
+              "homeScore": 0,
+              "stadium": "Bowser Castle"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "star0chris",
+              "awayScore": 2,
+              "homePlayer": "CJ",
+              "homeScore": 3,
+              "stadium": "Wario Palace"
+            }
+          ],
+          "overallStatus": "Processed"
+        },
+        {
+          "awayPlayer": "DGR Dave",
+          "homePlayer": "Moarf",
+          "gameTime": "July 31st, 2ET",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "DGR Dave",
+              "awayScore": 10,
+              "homePlayer": "Moarf",
+              "homeScore": 0,
+              "stadium": "Mario Stadium"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "Moarf",
+              "awayScore": 10,
+              "homePlayer": "DGR Dave",
+              "homeScore": 12,
+              "stadium": "Yoshi Park"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "DGR Dave",
+              "awayScore": 12,
+              "homePlayer": "Moarf",
+              "homeScore": 2,
+              "stadium": "Wario Palace"
+            }
+          ],
+          "overallStatus": "Processed"
+        },
+        {
+          "awayPlayer": "Fir",
+          "homePlayer": "Xwater",
+          "gameTime": "August 6th, 5ET",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "Fir",
+              "awayScore": 0,
+              "homePlayer": "Xwater",
+              "homeScore": 0,
+              "stadium": "Mario Stadium"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "Xwater",
+              "awayScore": 0,
+              "homePlayer": "Fir",
+              "homeScore": 0,
+              "stadium": "Peach Garden"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "Fir",
+              "awayScore": 0,
+              "homePlayer": "Xwater",
+              "homeScore": 0,
+              "stadium": "Wario Palace"
+            }
+          ],
+          "overallStatus": "Not Submitted"
+        },
+        {
+          "awayPlayer": "Andy",
+          "homePlayer": "Wavy",
+          "gameTime": "July 31st, Afternoon",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "Andy",
+              "awayScore": 11,
+              "homePlayer": "Wavy",
+              "homeScore": 0,
+              "stadium": "Peach Garden"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "Wavy",
+              "awayScore": 1,
+              "homePlayer": "Andy",
+              "homeScore": 11,
+              "stadium": "DK Jungle"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "Andy",
+              "awayScore": 8,
+              "homePlayer": "Wavy",
+              "homeScore": 2,
+              "stadium": "Wario Palace"
+            }
+          ],
+          "overallStatus": "Processed"
+        },
+        {
+          "awayPlayer": "Lightorias",
+          "homePlayer": "Vswed",
+          "gameTime": "August 2nd, 11ET",
+          "games": [
+            {
+              "gameNumber": 1,
+              "awayPlayer": "Lightorias",
+              "awayScore": 0,
+              "homePlayer": "Vswed",
+              "homeScore": 10,
+              "stadium": "Bowser Castle"
+            },
+            {
+              "gameNumber": 2,
+              "awayPlayer": "Vswed",
+              "awayScore": 6,
+              "homePlayer": "Lightorias",
+              "homeScore": 3,
+              "stadium": "Yoshi Park"
+            },
+            {
+              "gameNumber": 3,
+              "awayPlayer": "Lightorias",
+              "awayScore": 0,
+              "homePlayer": "Vswed",
+              "homeScore": 7,
+              "stadium": "Wario Palace"
+            }
+          ],
+          "overallStatus": "Processed"
+        }
+      ]
+    }
+  ]
+} 
