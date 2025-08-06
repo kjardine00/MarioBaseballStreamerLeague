@@ -2,6 +2,8 @@ import { useParams } from "react-router";
 import TeamRoster from "../components/TeamRoster";
 import { getTeamLogo } from "../assets/assetRegistry";
 import teamsData from "../data/teams.json";
+import Scoreboard from "../components/Scoreboard";
+import MatchHistory from "../components/MatchHistory";
 
 function TeamPage() {
   const { teamId } = useParams();
@@ -14,8 +16,8 @@ function TeamPage() {
         alt={`${team.name} Logo`}
         className="team-btn-img"
       />
-      {/* <Score />
-      <Matches /> */}
+      <Scoreboard team={team} />
+      <MatchHistory team={team} />
       <TeamRoster teamId={teamId} />
     </div>
   );

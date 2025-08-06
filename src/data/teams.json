@@ -3,7 +3,7 @@
     "id": "andys-fandys",
     "name": "Andy's Fandys",
     "manager": "Andy",
-    "username": "",
+    "username": "Andu",
     "stadium": "Donkey Kong Jungle",
     "roster": ["Donkey Kong", "Petey Piranha", "Waluigi", "Toadsworth", "Green Noki", "Shy Guy", "Purple Toad", "Green Toad", "Red Koopa", "Monty Mole"]
   },
@@ -11,7 +11,7 @@
     "id": "cjya-monkeys",
     "name": "CJYA Monkeys",
     "manager": "cjya",
-    "username": "",
+    "username": "cjFartya",
     "stadium": "Bowser Castle",
     "roster": ["Donkey Kong", "Mario", "Wario", "Toadsworth", "Daisy", "Dixie Kong", "Bowser Jr.", "Goomba", "Paratroopa", "Paragoomba"]
   },
@@ -19,7 +19,7 @@
     "id": "dgr-dingers",
     "name": "DGR Dingers",
     "manager": "DGR_Dave",
-    "username": "",
+    "username": "DGR",
     "stadium": "Yoshi Park",
     "roster": ["Petey Piranha", "Hammer Bro", "Daisy", "Daisy", "Peach", "Toad", "Yellow Toad", "Yellow Shy Guy", "Baby Mario", "Baby Luigi"]
   },
@@ -27,7 +27,7 @@
     "id": "fir-golf-rules",
     "name": "FIR Golf Rules",
     "manager": "Fir",
-    "username": "",
+    "username": "Fir",
     "stadium": "Peach Garden",
     "roster": ["Yoshi", "Birdo", "Birdo", "King Boo", "Waluigi", "Blue Pianta", "Yellow Pianta", "Black Shy Guy", "Blue Noki", "Baby Mario"]
   },
@@ -35,7 +35,7 @@
     "id": "wishlist-curiousity-bc",
     "name": "Wishlist Curiousity BC",
     "manager": "GrandPooBear",
-    "username": "",
+    "username": "gpb",
     "stadium": "Wario Palace",
     "roster": ["Donkey Kong", "Donkey Kong", "Fire Bro", "Yellow Magikoopa", "Waluigi", "Wario", "Daisy", "Dixie Kong", "Green Dry Bones", "Monty Mole"]
   },
@@ -43,7 +43,7 @@
     "id": "lightorious-swingers",
     "name": "Lightorious Swingers",
     "manager": "Lightorious",
-    "username": "",
+    "username": "Lig",
     "stadium": "Yoshi Park",
     "roster": ["Boomerang Bro", "Petey Piranha", "Yoshi", "Green Magikoopa", "Green Paratroopa", "Diddy Kong", "Koopa", "Blue Dry Bones", "Dry Bones", "Purple Toad"]
   },
@@ -51,7 +51,7 @@
     "id": "moarf-lobsters",
     "name": "Moarf Lobsters",
     "manager": "Moarf",
-    "username": "",
+    "username": "Moarf23",
     "stadium": "Mario Stadium",
     "roster": ["Bowser", "Red Magikoopa", "Mario", "Luigi", "Peach", "Dixie Kong", "Bowser Jr.", "Diddy Kong", "Diddy Kong", "Red Dry Bones"]
   },
@@ -59,7 +59,7 @@
     "id": "phillie-cheesesteaks",
     "name": "Phillie Cheesesteaks",
     "manager": "Phillie",
-    "username": "",
+    "username": "Phillie",
     "stadium": "Donkey Kong Jungle",
     "roster": ["Boomerang Bro", "King Boo", "Yoshi", "Boo", "Magikoopa", "Wario", "Luigi", "Red Toad", "Toadette", "Baby Luigi"]
   },
@@ -67,7 +67,7 @@
     "id": "virgins",
     "name": "Virgins",
     "manager": "star0chris",
-    "username": "",
+    "username": "star0chris",
     "stadium": "Wario Palace",
     "roster": ["King Boo", "Red Magikoopa", "Boo", "Boo", "Wario", "Shy Guy", "Blue Shy Guy", "Green Shy Guy", "Blue Toad", "Blue Noki"]
   },
@@ -75,7 +75,7 @@
     "id": "vswed-bombers",
     "name": "Vswed Bombers",
     "manager": "Vswed",
-    "username": "",
+    "username": "Vswed",
     "stadium": "Bowser Castle",
     "roster": ["Bowser", "Hammer Bro", "Magikoopa", "Toadsworth", "Yellow Pianta", "Green Paratroopa", "Toadette", "Bowser Jr.", "Green Shy Guy", "Monty Mole"]
   },
@@ -83,7 +83,7 @@
     "id": "oogy-gooners",
     "name": "Oogy Gooners",
     "manager": "Wavy",
-    "username": "",
+    "username": "wavyoogy",
     "stadium": "Peach Garden",
     "roster": ["Birdo", "Yellow Magikoopa", "Toadsworth", "Green Noki", "Red Pianta", "Red Pianta", "Luigi", "Peach", "Toadette", "Red Noki"]
   },
@@ -91,7 +91,7 @@
     "id": "wet-blankets",
     "name": "Wet Blankets",
     "manager": "Xwater",
-    "username": "",
+    "username": "xwater",
     "stadium": "Mario Stadium",
     "roster": ["Fire Bro", "Green Magikoopa", "Mario", "Waluigi", "Green Dry Bones", "Green Noki", "Green Noki", "Blue Pianta", "Peach", "Red Noki"]
   }

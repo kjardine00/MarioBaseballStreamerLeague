@@ -3,9 +3,9 @@ import '../components/PlayerSlot.css';
 
 function PlayerSlot({ player }) {
 
-    console.log("PlayerSlot - player:", player);
+    // console.log("PlayerSlot - player:", player);
     const iconPath = getPlayerIcon(player);
-    console.log("PlayerSlot - iconPath:", iconPath);
+    // console.log("PlayerSlot - iconPath:", iconPath);
     
     return (
         <div className="player-slot">

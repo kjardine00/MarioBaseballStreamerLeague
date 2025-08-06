@@ -14,6 +14,10 @@ export const ASSETS = {
         VIRGINS: "/assets/hero-logos/herologo-virgins.png",
     },
 
+    TEAM_ICONS: {
+        TEMP: "/assets/team-icons/TempTeamIcon.png"
+    },
+
     STADIUM_IMAGES: {
         MARIO_STADIUM: "/assets/stadiums/stadium-mario-stadium.png",
         PEACH_GARDEN: "/assets/stadiums/stadium-peach-garden.png",
@@ -101,7 +105,38 @@ export const getTeamLogo = (teamId) => {
     return teamMap[teamId]
 }
 
+export const getTeamIcon = (teamId) => {
+    const teamIconMap = {
+        "Andy's Fandys": ASSETS.TEAM_ICONS.TEMP,
+        "CJYA Monkeys": ASSETS.TEAM_ICONS.TEMP,
+        "DGR Dingers": ASSETS.TEAM_ICONS.TEMP,
+        "FIR Golf Rules": ASSETS.TEAM_ICONS.TEMP,
+        "Wishlist Curiousity BC": ASSETS.TEAM_ICONS.TEMP,
+        "Lightorious Swingers": ASSETS.TEAM_ICONS.TEMP,
+        "Moarf Lobsters": ASSETS.TEAM_ICONS.TEMP,
+        "Phillie Cheesesteaks": ASSETS.TEAM_ICONS.TEMP,
+        "Vswed Bombers": ASSETS.TEAM_ICONS.TEMP,
+        "Oogy Gooners": ASSETS.TEAM_ICONS.TEMP,
+        "Wet Blankets": ASSETS.TEAM_ICONS.TEMP,
+        "Virgins": ASSETS.TEAM_ICONS.TEMP,
+    }
+
+    return teamIconMap[teamId]
+}
+
 export const getStadiumImage = (stadiumId) => {
+    
+    let stadiumAsset = ""
+
+    const stadiumIdMap = {
+        0: "Mario Stadium",
+        1: "Bowser Castle",
+        2: "Wario Palace",
+        3: "Yoshi Park",
+        4: "Peach Garden",
+        5: "DK Jungle"
+    }
+    
     const stadiumMap = {
         "Mario Stadium": ASSETS.STADIUM_IMAGES.MARIO_STADIUM,
         "Peach Garden": ASSETS.STADIUM_IMAGES.PEACH_GARDEN,
@@ -110,8 +145,15 @@ export const getStadiumImage = (stadiumId) => {
         "Donkey Kong Jungle": ASSETS.STADIUM_IMAGES.DONKEY_KONG_JUNGLE,
         "Bowser Castle": ASSETS.STADIUM_IMAGES.BOWSER_CASTLE,
     }
+    
+    console.log("stadiumId: ",stadiumId)
 
-    return stadiumMap[stadiumId]
+    if (typeof stadiumId === "number") {
+        stadiumAsset = stadiumMap[stadiumIdMap[stadiumId]]
+    } else if (typeof stadiumId === "string") {
+        stadiumAsset = stadiumMap[stadiumId]
+    }
+    return stadiumAsset
 }
 
 export const getPlayerIcon = (playerName) => {

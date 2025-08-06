@@ -10,7 +10,7 @@ function Rules() {
             <p>Characters: 12 players participate in an auction draft consisting of 120 characters and 12 stadiums. The roster list is subject to change until the draft,
                  {/* but is currently displayed below: */}
                  </p>
-            <p>(Note: 2nd Yellow Pianta has replaced 2nd Goomba) (edited)</p>
+            <p>(Note: 2nd Yellow Pianta has replaced 2nd Goomba) </p>
             
             {/* Character roster image would go here
             <div className="roster-image">
@@ -39,7 +39,7 @@ function Rules() {
             
             <p><strong>Playoffs:</strong> Seeding: wins, H2H, differential. Division winners get top seeds. BO1, BO3, BO5.</p>
             
-            <p><strong>Streaming:</strong> Games will ideally be streamed/recorded and highlights posted to the Discord server. (edited)</p>
+            <p><strong>Streaming:</strong> Games will ideally be streamed/recorded and highlights posted to the Discord server.</p>
 
             <h2>Pitcher Rotations</h2>
             <p><strong>Pitcher Rest Requirements:</strong> No character can pitch all 3 games, no pitcher can start consecutive games. Duplicate characters with differing handedness: only two duplicates, one left-handed and one right-handed, may pitch. This rule only applies to pitching handedness, not batting.</p>
@@ -52,7 +52,7 @@ function Rules() {
             <p><strong>Trade Deadline:</strong> A trade deadline will be set 1-2 weeks before the end of the regular season.</p>
 
             <h2>Other Rules</h2>
-            <p><strong>Addendums/Rulings:</strong> Commissioner(s) may add addendums to rules during the season if needed and agreed upon by the majority of players, and may make emergency rulings. (edited)</p>
+            <p><strong>Addendums/Rulings:</strong> Commissioner(s) may add addendums to rules during the season if needed and agreed upon by the majority of players, and may make emergency rulings.</p>
         </div>
     )
 }
