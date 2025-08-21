@@ -23,9 +23,13 @@ function TeamPage() {
           <Scoreboard team={team} />
         </div>
       </div>
-      <MatchHistory team={team} />
-      <TeamRoster teamId={teamId} />
-      {/* <TeamStats team={team} /> */}
+      <div className="team-page-content">
+        <MatchHistory team={team} />
+        <div className="team-page-content-right">
+          <TeamRoster teamId={teamId} />
+          {/* <TeamStats team={team} /> */}
+        </div>
+      </div>
     </div>
   );
 }
