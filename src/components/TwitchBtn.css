@@ -1,0 +1,23 @@
+.twitch-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    width: 300px;
+    margin: 25px
+}
+
+.twitch-svg {
+    width: 125px;
+    height: auto;
+    object-fit: contain;
+}
+
+.twitch-text {
+    padding: 20px;
+    font-size: 48px;
+    font-weight: 600;
+    text-decoration: none;
+}

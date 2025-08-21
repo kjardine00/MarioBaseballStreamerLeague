@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import matchesData from "../data/matches.json";
+import "./Scoreboard.css";
 
 function Scoreboard({ team }) {
     const [record, setRecord] = useState([0, 0]);
@@ -39,10 +40,11 @@ function Scoreboard({ team }) {
     }, [team.username]);
 
     return (
-        <div className="scoreboard">
-            <h1>{team.name}</h1>
-            <h2>{record[0]}-{record[1]}</h2>
-        </div>
+        <span className="scoreboard">
+            <h1 className="scoreboard-wins">{record[0]}</h1>
+            <h1 className="scoreboard-hyphen">-</h1>
+            <h1 className="scoreboard-losses">{record[1]}</h1>
+        </span>
     )
 }
 

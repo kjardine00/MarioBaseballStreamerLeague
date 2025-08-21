@@ -1,4 +1,21 @@
 .team-page {
     display: flex;
+    flex-direction: column;
+}
+
+.team-page-header {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 100px 10px 50px;
+}
+
+.team-page-header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
 }

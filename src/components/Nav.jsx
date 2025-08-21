@@ -36,21 +36,21 @@ function Nav({ isOpen, onClose }) {
         <Link to="/teams" className="nav-link" onClick={handleNavLinkClick}>
           TEAMS
         </Link>
-        <Link to="/scores" className="nav-link" onClick={handleNavLinkClick}>
+        {/* <Link to="/scores" className="nav-link" onClick={handleNavLinkClick}>
           SCORES
-        </Link>
+        </Link> */}
         <Link to="/standings" className="nav-link" onClick={handleNavLinkClick}>
           STANDINGS
         </Link>
         <Link to="/stats" className="nav-link" onClick={handleNavLinkClick}>
           STATS
         </Link>
-        <Link to="/schedule" className="nav-link" onClick={handleNavLinkClick}>
+        {/* <Link to="/schedule" className="nav-link" onClick={handleNavLinkClick}>
           SCHEDULE
-        </Link>
-        <Link to="/rules" className="nav-link" onClick={handleNavLinkClick}>
+        </Link> */}
+        {/* <Link to="/rules" className="nav-link" onClick={handleNavLinkClick}>
           RULES
-        </Link>
+        </Link> */}
       </div>
     </nav>
   );

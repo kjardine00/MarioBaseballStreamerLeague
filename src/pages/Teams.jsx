@@ -59,7 +59,7 @@ function Teams() {
           <h1>Loading...</h1>
         )}
       </div>
-      <StadiumBackground stadium={bgStadium} />
+      {/* <StadiumBackground stadium={bgStadium} /> */}
     </>
   );
 }
