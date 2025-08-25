@@ -1,16 +1,20 @@
 import { useParams } from "react-router";
+import { useState } from "react";
 import TeamRoster from "../components/TeamRoster";
-import { getTeamLogo } from "../assets/assetRegistry";
 import teamsData from "../data/teams.json";
 import Scoreboard from "../components/Scoreboard";
 import MatchHistory from "../components/MatchHistory";
 import TeamBtn from "../components/TeamBtn";
 import TwitchBtn from "../components/TwitchBtn";
+import PitchingStatGrid from "../components/PitchingStatGrid";
+import BattingStatGrid from "../components/BattingStatGrid";
 import "./TeamPage.css";
 
 function TeamPage() {
   const { teamId } = useParams();
   const team = teamsData.find((team) => team.id === teamId);
+
+  const [statType, setStatType] = useState("batting");
 
   return (
     <div className="team-page">
@@ -27,7 +31,18 @@ function TeamPage() {
         <MatchHistory team={team} />
         <div className="team-page-content-right">
           <TeamRoster teamId={teamId} />
-          {/* <TeamStats team={team} /> */}
+          <button onClick={() => {
+            console.log("clicked");
+          }}>
+            Batting
+          </button>
+          <button onClick={() => {
+            console.log("clicked");
+          }}>
+            Pitching
+          </button>
+          <PitchingStatGrid />
+          <BattingStatGrid />
         </div>
       </div>
     </div>
