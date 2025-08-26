@@ -1,5 +1,6 @@
 import teamsData from "../data/teams.json";
 import { getTeamIcon, getStadiumImage } from "../assets/assetRegistry";
+import "../styles/MatchHistory.css";
 
 function Match({ match }) {
 

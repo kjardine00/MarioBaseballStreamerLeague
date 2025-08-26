@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import matchesData from "../data/matches.json";
 import Match from "./Match";
-import "../styles/MatchHistory.css";
+// import "../styles/MatchHistory.css";
 
 function MatchHistory({ team }) {
     const [matches, setMatches] = useState([]);
