@@ -31,18 +31,19 @@ function TeamPage() {
         <MatchHistory team={team} />
         <div className="team-page-content-right">
           <TeamRoster teamId={teamId} />
-          <button onClick={() => {
-            console.log("clicked");
-          }}>
+          <button 
+            onClick={() => setStatType("batting")}
+            className={statType === "batting" ? "active" : ""}
+          >
             Batting
           </button>
-          <button onClick={() => {
-            console.log("clicked");
-          }}>
+          <button 
+            onClick={() => setStatType("pitching")}
+            className={statType === "pitching" ? "active" : ""}
+          >
             Pitching
           </button>
-          <PitchingStatGrid />
-          <BattingStatGrid />
+          {statType === "pitching" ? <PitchingStatGrid /> : <BattingStatGrid />}
         </div>
       </div>
     </div>
