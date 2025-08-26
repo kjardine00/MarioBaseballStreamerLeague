@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { useEffect, useRef } from "react";
-import "./Nav.css";
+import "../styles/Nav.css";
 
 function Nav({ isOpen, onClose }) {
   const navRef = useRef(null);

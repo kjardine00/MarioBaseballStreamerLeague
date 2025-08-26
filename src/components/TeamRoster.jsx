@@ -1,5 +1,5 @@
 import PlayerSlot from "./PlayerSlot";
-import "./TeamRoster.css";
+import "../styles/TeamRoster.css";
 import teamsData from "../data/teams.json";
 
 function TeamRoster({ teamId }) {

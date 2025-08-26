@@ -7,7 +7,7 @@ import {
 import { AgGridReact } from "ag-grid-react";
 import players from "../data/players.json";
 import { useState } from "react";
-import "./PitchingStatGrid.css";
+import "../styles/PitchingStatGrid.css";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 

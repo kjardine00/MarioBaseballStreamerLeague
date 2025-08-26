@@ -8,7 +8,7 @@ import TeamBtn from "../components/TeamBtn";
 import TwitchBtn from "../components/TwitchBtn";
 import PitchingStatGrid from "../components/PitchingStatGrid";
 import BattingStatGrid from "../components/BattingStatGrid";
-import "./TeamPage.css";
+import "../styles/TeamPage.css";
 
 function TeamPage() {
   const { teamId } = useParams();

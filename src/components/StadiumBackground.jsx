@@ -1,5 +1,5 @@
 import { getStadiumImage } from "../assets/assetRegistry";
-import "./StadiumBackground.css";
+import "../styles/StadiumBackground.css";
 import { useState, useEffect } from "react";
 
 function StadiumBackground({ stadium }) {

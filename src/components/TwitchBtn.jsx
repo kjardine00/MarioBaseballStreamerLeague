@@ -1,5 +1,5 @@
 import twitchIcon from "/assets/icons/twitch-svg-purple.svg";
-import "./TwitchBtn.css";
+import "../styles/TwitchBtn.css";
 
 function TwitchBtn({ team }) {
     return (

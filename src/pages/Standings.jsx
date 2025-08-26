@@ -1,4 +1,4 @@
-import './Pages.css';
+import '../styles/Pages.css';
 
 function Standings() {
     return (

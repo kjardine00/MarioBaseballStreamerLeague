@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router";
-import "./Header.css";
+import "../styles/Header.css";
 import hamburgerMenu from "../assets/menu-hamburger.svg";
 
 function Header({ isHome, isNavOpen, toggleNav }) {

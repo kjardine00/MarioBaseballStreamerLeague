@@ -1,4 +1,4 @@
-import "./TeamBtn.css";
+import "../styles/TeamBtn.css";
 import { getTeamLogo } from "../assets/assetRegistry";
 
 function TeamBtn({ team, onMouseEnter }) {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import matchesData from "../data/matches.json";
-import "./Scoreboard.css";
+import "../styles/Scoreboard.css";
 
 function Scoreboard({ team }) {
     const [record, setRecord] = useState([0, 0]);

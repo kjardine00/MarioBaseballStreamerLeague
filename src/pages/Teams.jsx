@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import TeamBtn from "../components/TeamBtn";
-import "./Teams.css";
+import "../styles/Teams.css";
 import { useState, useEffect, useCallback, useRef } from "react";
 import teamsData from "../data/teams.json";
 import StadiumBackground from "../components/StadiumBackground";
