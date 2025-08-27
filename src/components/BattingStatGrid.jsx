@@ -2,12 +2,10 @@ import * as React from "react";
 import {
   ModuleRegistry,
   AllCommunityModule,
-  themeMaterial,
 } from "ag-grid-community";
 import { AgGridReact } from "ag-grid-react";
 import players from "../data/players.json";
 import { useState } from "react";
-import "../styles/PitchingStatGrid.css";
 
 ModuleRegistry.registerModules([AllCommunityModule]);
 
@@ -15,9 +13,8 @@ import { themeQuartz, iconSetMaterial } from "ag-grid-community";
 
 // to use myTheme in an application, pass it to the theme grid option
 const myTheme = themeQuartz.withPart(iconSetMaterial).withParams({
-  accentColor: "#FF0000",
-  backgroundColor: "#1f2836",
-  browserColorScheme: "dark",
+  accentColor: "var(--color-blue)",
+  backgroundColor: "var(--color-card-background)",
   chromeBackgroundColor: {
     ref: "foregroundColor",
     mix: 0.07,
@@ -25,14 +22,14 @@ const myTheme = themeQuartz.withPart(iconSetMaterial).withParams({
   },
   columnBorder: true,
   fontFamily: ["Arial", "sans-serif"],
-  foregroundColor: "#FFF",
-  headerBackgroundColor: "#389146",
+  foregroundColor: "var(--color-text)",
+  headerBackgroundColor: "var(--color-blue)",
   headerFontSize: 14,
   headerRowBorder: true,
   headerVerticalPaddingScale: 1,
   rowBorder: true,
   rowVerticalPaddingScale: 1,
-  spacing: 8,
+  spacing: 7,
   wrapperBorder: true,
 });
 
@@ -195,24 +192,6 @@ function BattingStatGrid() {
   return (
     <div className="stat-grid" style={{ height: 500, width: "100%" }}>
       <AgGridReact theme={myTheme} rowData={rowData} columnDefs={colDefs} />
-      <h3>GLOSSARY</h3>
-      <ul>
-        <li>GP: Games Played</li>
-        <li>H: Hits</li>
-        <li>AB: At Bats</li>
-        <li>S: Singles</li>
-        <li>D: Doubles</li>
-        <li>T: Triples</li>
-        <li>HR: Home Runs</li>
-        <li>TB: Total Bases</li>
-        <li>RBI: Runs Batted In</li>
-        <li>BB: Walks</li>
-        <li>K: Strikeouts</li>
-        <li>AVG: Batting Average</li>
-        <li>OBP: On-Base Percentage</li>
-        <li>SLG: Slugging Percentage</li>
-        <li>OPS+: On-Base Plus Slugging Percentage</li>
-      </ul>
     </div>
   );
 }

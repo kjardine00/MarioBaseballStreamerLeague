@@ -1,5 +1,5 @@
 import { getPlayerIcon } from "../assets/assetRegistry";
-import '../styles/PlayerSlot.css';
+import '../styles/TeamRoster.css';
 
 function PlayerSlot({ player }) {
 

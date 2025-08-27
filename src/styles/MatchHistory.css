@@ -2,44 +2,88 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightblue;
-    border-radius: 10px;
-    width: 50%;
-    border: 5px solid purple;
+    border-radius: var(--border-radius);
+    width: 40%;
+    border: 5px solid var(--color-yellow);
+    background-color: var(--color-card-background);
+    color: var(--color-text);
+}
+
+.match-history-container-title {
+    font-size: 30px;
+    align-self: flex-start;
+    padding: 10px 30px 10px 20px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.match-history-container-subtitle {
+    font-size: 16px;
+    align-self: flex-start;
+    padding: 0px 20px 10px 20px;
+    color: var(--color-text);
+    width: 100%;
+    border-bottom: 2px solid var(--color-border);
 }
 
 .match-obj {
     display: grid;
-    grid-template-columns: 80px 80px 1fr 80px 120px 80px;
+    grid-template-columns: 1fr 2fr 5fr 1fr 2fr 2fr;
     grid-template-rows: 1fr;
-    gap: 15px;
     align-items: center;
     justify-items: center;
-    border: 5px solid orange;
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    border-bottom: 2px solid var(--color-border);
 }
 
 .match-obj-position {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .match-obj-opp-logo {
-    width: 50px;
-    height: auto;
+    width: auto;
+    height: 40px;
+    cursor: pointer;
+    padding-left: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.match-obj-opp-logo:hover {
+    transform: scale(1.1);
+}
+
+.match-obj a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .match-obj-opp-name {
     font-size: 20px;
+    text-align: left;
 }
 
 .match-obj-win {
-    font-size: 20px;
+    font-size: 24px;
+    color: var(--color-green);
+}
+
+.match-obj-loss {
+    font-size: 24px;
+    color: var(--color-red);
 }
 
 .match-obj-score {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .match-obj-stadium {
-    width: 50px;
-    height: auto;
+    width: 75px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--color-border);
 }

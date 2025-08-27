@@ -134,7 +134,7 @@ export const getStadiumImage = (stadiumId) => {
         2: "Wario Palace",
         3: "Yoshi Park",
         4: "Peach Garden",
-        5: "DK Jungle"
+        5: "Donkey Kong Jungle"
     }
     
     const stadiumMap = {

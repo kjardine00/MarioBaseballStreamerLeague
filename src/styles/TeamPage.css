@@ -1,24 +1,16 @@
+
 .team-page {
     display: flex;
     flex-direction: column;
 }
 
 .team-page-header {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    padding: 10px 100px 10px 50px;
-    border: 5px solid green;
-}
-
-.team-page-header-left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 60%;
+    padding: 10px 50px;
 }
 
 .team-page-content {
@@ -26,7 +18,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 50px;
-    border: 5px solid red;
     gap: 25px;
 }
 
@@ -34,6 +25,73 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid purple;
     width: 75%;
+}
+
+.stat-toggle {
+    align-self: flex-start;
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.409);
+    border-radius: 25px;
+    padding: 4px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.stat-toggle-segment {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 20px;
+    min-width: 100px;
+}
+
+.stat-toggle-segment.active {
+    background-color: var(--color-red);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.stat-toggle-segment:hover:not(.active) {
+    background-color: var(--color-red);
+}
+
+.stat-grid {
+    width: 100%;
+}
+
+.glossary {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.glossary h3 {
+    margin-bottom: 25px;
+}
+
+.glossary-content {
+    width: 100%;
+}
+
+.glossary-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    column-count: 3;
+    column-gap: 30px;
+    column-fill: balance;
+}
+
+.glossary-item {
+    font-weight: normal;
+    break-inside: avoid;
+    margin-bottom: 12px;
+}
+
+.glossary-item .abbr {
+    font-weight: bold;
 }

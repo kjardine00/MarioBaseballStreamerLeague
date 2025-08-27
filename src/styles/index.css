@@ -4,18 +4,25 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgb(255, 255, 255);
+  background-color: var(--color-background);
 
   --color-red: #CE1821;
   --color-blue: #004A94;
   --color-green: #00944A;
   --color-yellow: #DEAD17;
 
+  --color-background: rgb(227, 227, 227);
+  --color-text: black;
+  --color-border: rgb(163, 163, 163);
+  --color-card-background: rgb(255, 255, 255);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --border-radius: 10px;
 }
 
 * {
@@ -29,6 +36,16 @@ html, body {
   height: 100%;
 }
 
-@media (prefers-color-scheme: light) {
-  
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background-dark: #2a2929;
+    --color-text-dark: white;
+    --color-border-dark: rgb(49, 49, 49);
+
+    --color-background:#2a2929;
+    --color-text: white;
+    --color-border: rgb(49, 49, 49);
+    --color-card-background: #3a3a3a;
+  }
+
 }

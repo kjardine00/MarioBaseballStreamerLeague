@@ -8,6 +8,7 @@ import TeamBtn from "../components/TeamBtn";
 import TwitchBtn from "../components/TwitchBtn";
 import PitchingStatGrid from "../components/PitchingStatGrid";
 import BattingStatGrid from "../components/BattingStatGrid";
+import Glossary from "../components/Glossary";
 import "../styles/TeamPage.css";
 
 function TeamPage() {
@@ -19,31 +20,34 @@ function TeamPage() {
   return (
     <div className="team-page">
       <div className="team-page-header">
-        <div className="team-page-header-left">
-          <TeamBtn className="team-btn" team={team} />
-          <TwitchBtn team={team} />
-        </div>
-        <div className="team-page-header-right">
-          <Scoreboard team={team} />
-        </div>
+        <TeamBtn className="team-btn" team={team} />
+        <TwitchBtn team={team} />
+        <Scoreboard team={team} />
       </div>
       <div className="team-page-content">
         <MatchHistory team={team} />
         <div className="team-page-content-right">
           <TeamRoster teamId={teamId} />
-          <button 
-            onClick={() => setStatType("batting")}
-            className={statType === "batting" ? "active" : ""}
-          >
-            Batting
-          </button>
-          <button 
-            onClick={() => setStatType("pitching")}
-            className={statType === "pitching" ? "active" : ""}
-          >
-            Pitching
-          </button>
+          <div className="stat-toggle">
+            <button
+              onClick={() => setStatType("batting")}
+              className={`stat-toggle-segment ${
+                statType === "batting" ? "active" : ""
+              }`}
+            >
+              Batting
+            </button>
+            <button
+              onClick={() => setStatType("pitching")}
+              className={`stat-toggle-segment ${
+                statType === "pitching" ? "active" : ""
+              }`}
+            >
+              Pitching
+            </button>
+          </div>
           {statType === "pitching" ? <PitchingStatGrid /> : <BattingStatGrid />}
+          <Glossary statType={statType} />
         </div>
       </div>
     </div>

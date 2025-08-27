@@ -6,7 +6,9 @@
     padding: 10px;
     text-decoration: none;
     width: 300px;
-    margin: 25px
+    margin: 25px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .twitch-svg {
@@ -20,4 +22,9 @@
     font-size: 48px;
     font-weight: 600;
     text-decoration: none;
+    color: var(--color-text);
+}
+
+.twitch-btn:hover {
+    transform: scale(1.1);
 }

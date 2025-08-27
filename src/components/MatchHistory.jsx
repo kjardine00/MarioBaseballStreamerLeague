@@ -33,6 +33,8 @@ function MatchHistory({ team }) {
 
     return (
         <div className="match-history-container">
+            <span className="match-history-container-title">Schedule</span>
+            <span className="match-history-container-subtitle">Fall 2025 Season</span>
             {matches.map((match, index) => (
                 <Match key={index} match={match} />
             ))}
